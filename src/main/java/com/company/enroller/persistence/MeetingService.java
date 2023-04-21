@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import com.company.enroller.model.Meeting;
 import com.company.enroller.model.Participant;
 
-@Component("meetingService")
+@Component("eetingService")
 public class MeetingService {
 
 	Session session;

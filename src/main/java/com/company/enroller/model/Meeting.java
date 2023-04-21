@@ -64,6 +64,7 @@ public class Meeting {
 	}
 
 	public void addParticipant(Participant participant) {
+		participant.getMeetings().add(this);
 		this.participants.add(participant);
 	}
 

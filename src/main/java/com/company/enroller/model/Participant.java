@@ -6,10 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Collection;
 
 @Entity
 @Table(name = "participant")
-public class Participant {
+public class   Participant {
 
 	@Id
 	private String login;
@@ -32,5 +33,9 @@ public class Participant {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Collection<Meeting> getMeetings() {
+		return null;
 	}
 }
